@@ -31,12 +31,14 @@ export default function MenuItemCard({ item, onClick, index }: MenuItemCardProps
 
         <div className="flex items-center justify-between gap-3">
           <div className="flex flex-col">
-            <span className="text-sm font-semibold text-muted-foreground">USD</span>
-            <span className="text-2xl font-black text-accent">${item.priceUSD}</span>
+            <span className="text-sm font-semibold text-gray-600">USD</span>
+            <span className="text-2xl font-black text-black">${item.priceUSD}</span>
           </div>
           <div className="flex flex-col text-right">
-            <span className="text-sm font-semibold text-muted-foreground">LBP</span>
-            <span className="text-lg font-bold text-foreground">{item.priceLBP.toLocaleString()} L.L</span>
+            <span className="text-sm font-semibold text-gray-600">LBP</span>
+            <span className="text-lg font-bold text-black">
+              {item.priceLBP.toLocaleString()} L.L
+            </span>
           </div>
         </div>
       </div>
