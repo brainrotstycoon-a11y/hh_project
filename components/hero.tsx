@@ -1,16 +1,20 @@
 export default function Hero() {
   return (
     <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+      {/* خلفية الصورة */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-accent/20"
+        className="absolute inset-0 opacity-50"
         style={{
           backgroundImage: "url(/coffee-shop-background.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundBlendMode: "multiply",
         }}
       />
+      
+      {/* طبقة التدرج فوق الصورة */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-accent/20" />
 
+      {/* المحتوى */}
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
         <img
           src="/logo.png"
@@ -25,6 +29,7 @@ export default function Hero() {
         </p>
       </div>
 
+      {/* تدرج سفلي */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   )
