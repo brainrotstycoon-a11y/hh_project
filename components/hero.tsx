@@ -4,8 +4,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-accent/20"
         style={{
-          backgroundImage:
-            "url(/placeholder.svg?height=1080&width=1920&query=modern+coffee+shop+interior+futuristic+minimal)",
+          backgroundImage: "url(/coffee-shop-background.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "multiply",
@@ -13,7 +12,11 @@ export default function Hero() {
       />
 
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
-        <img src="/logo.png" alt="Coffee Time Lounge" className="h-24 md:h-32 mx-auto mb-8" />
+        <img
+          src="/logo.png"
+          alt="Coffee Time Lounge"
+          className="h-24 md:h-32 mx-auto mb-8"
+        />
         <h1 className="text-4xl md:text-6xl font-black text-primary-foreground mb-4 tracking-tight">
           Welcome to Coffee Time
         </h1>
