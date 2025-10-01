@@ -300,12 +300,6 @@ export const menuData: Category[] = [
         image: "/special-cake-slice-layered.jpg",
       },
       {
-        name: "Cake",
-        priceUSD: "2.14",
-        priceLBP: 150000,
-        image: "/cake-slice-dessert-frosting.jpg",
-      },
-      {
         name: "Jello",
         priceUSD: "1.07",
         priceLBP: 75000,
